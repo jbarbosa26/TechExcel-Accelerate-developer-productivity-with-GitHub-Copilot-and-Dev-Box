@@ -26,6 +26,6 @@ jobs:
               with:
                 scope: resourcegroup
                 subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-                ResourceGroup: ${{ secrets.AZURE_RESOURCE_GROUP }}
-                template: ./path/to/your/template.bicep
-                parameters: ./path/to/your/parameters.json
+                resourceGroupName: ${{ secrets.AZURE_RESOURCE_GROUP }}
+                template: ./src/InfrastructureAsCdoe/main.bicep
+                # parameters: ./path/to/your/parameters.json
