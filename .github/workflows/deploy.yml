@@ -27,5 +27,6 @@ jobs:
                 scope: resourcegroup
                 subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
                 resourceGroupName: ${{ secrets.AZURE_RG}}
-                template: TechExcel-Accelerate-developer-productivity-with-GitHub-Copilot-and-Dev-Box/src/InfrastructureAsCode/main.bicep
+                template: ./InfrastructureAsCode/main.bicep
+                # parameters: environment=$
                 # parameters: ./path/to/your/parameters.json
