@@ -8,14 +8,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout repository
-              uses: actions/checkout@v2
-
-            - name: Log in to Azure
-              uses: azure/login@v1
-              with:
-                enable-AzPSSession: true
-                creds: ${{ secrets.AZURE_CREDENTIALS }}
+            # - name: Log in to Azure
+            #   uses: azure/login@v1
+            #   with:
+            #     enable-AzPSSession: true
+            #     creds: ${{ secrets.AZURE_CREDENTIALS }}
 
             - name: Deploy ARM Template
               uses: azure/arm-deploy@v1
